@@ -1,0 +1,235 @@
+/* RESET */
+
+*{ margin:0; padding:0; }
+
+body, html{ 
+	background:transparent;
+	vertical-align:baseline;
+	font-size:100%;
+	font-family: Arial, Verdana, sans-serif;
+}
+
+h1{ font-size:26px; }
+h2{ font-size:20px; }
+h3{ font-size:16px; }
+h4{ font-size:14px; }
+h5{ font-size:12px; }
+h6{ font-size:10px; }
+
+fieldset{ border: none; }
+
+li{ list-style:none; }
+
+a{text-decoration:none; outline: none;}
+
+a:hover{ text-decoration:none; }
+
+img{ border:none; }
+ 
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+/*-----------------------------------------------------------------------GENERALES-----------------------------------------------------------------*/
+
+
+body{ background:#f5f5f5 url("images/body-bg.jpg"); font-family: Arial, sans-serif; font-size: 13px; }
+
+.menu a, .search-btn, .search input, #quote p, h3, h4, h2, .more, .footer label, .nivo-caption p.title { font-family: 'BebasNeue', sans-serif; font-weight: lighter; }
+
+.container{ width: 960px; margin: 0 auto; padding: 35px 0 0 0; } 
+
+p{ line-height: 22px; }
+
+.col, .menu li{ float: left; }
+
+.q1, .services .col h2 a, .footer .menu a { color: #A55051 }
+
+.header .menu a, .features .col h4, .features .col p, .more, label, .about h2, .about p { color: #fff }
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('font/bebas-neue/BebasNeue-webfont.eot');
+    src: url('font/bebas-neue/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/bebas-neue/BebasNeue-webfont.woff') format('woff'),
+         url('font/bebas-neue/BebasNeue-webfont.ttf') format('truetype'),
+         url('font/bebas-neue/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*-----------------------------------------------------------------------HEADER-----------------------------------------------------------------*/
+
+.header h1{ margin: 0 0 40px 0; }
+
+.header .menu{ background: url("images/menu-bg.png") no-repeat; padding: 0 0 40px 0 }
+
+	.header .menu ul{ overflow:hidden; height: 84px; margin: 0 0 0 30px; }  
+	
+		.header .menu li{ line-height: 84px; }
+	
+		.header .menu a{ font-size: 18px; margin: 0 30px 0 0 } 
+		
+		.header .menu a:hover{ color: #a9494a;}
+		
+		.search{ margin: 0 0 0 126px; }
+		
+			.search input, .search button{ text-transform: uppercase; height: 40px; border: medium none; }
+		
+			.search input{ border:medium none; background: url("images/input-search-bg.png") no-repeat; width: 300px; font-size: 15px; color: #2f2f2f; height: 40px; padding: 0 0 0 20px; width: 280px; }
+			
+			.search button{ background: url("images/search-btn-bg.jpg") no-repeat; width: 118px; margin: 0 0 0 -4px; font-size: 18px; padding: 0 0 3px 0;
+			 cursor: pointer; }
+			 
+/*---------------------------------------------------------------SLIDER MAIN-----------------------------------------------------------------*/
+
+.slider-main{ background: url("images/slider-bg.png") no-repeat; position: relative; width: 943px; height: 366px; padding: 14px 9px 31px 9px; position: relative;}
+
+.nivoSlider { width:960px; height:301px; background:url(images/loading.gif) no-repeat 50% 50%; }
+    
+.nivoSlider img { position:absolute; top:0px; left:0px; display:none; }
+
+.nivoSlider a { border:0; display:block; }
+
+.nivo-controlNav{ position: absolute; bottom: -30px; right: 30px; }
+
+	.nivo-controlNav a{ float: left; background: url("images/slider-btn.png"); width: 19px; height: 19px; text-indent: -9999px; margin: 0 10px 0 0; }
+	
+		.nivo-controlNav a.active{ background: url("images/slider-btn-active.png"); width: 19px; height: 19px; }		
+
+		.nivo-caption { position:absolute; left:0px; bottom:0px; background:#fefefe; width:941px; z-index:8; opacity: 0; overflow: hidden; }
+		
+		.nivo-caption p { padding:0; margin:20px 0; color: #454545; }
+		
+		.nivo-caption p.title{ float: left; font-size: 18px; padding: 0 18px 0 18px; background: url("images/divider.png") no-repeat right 0; margin: 0 10px 0 0; width: 140px; }
+		
+		.nivo-caption a { display:inline !important; }
+		
+		.nivo-html-caption { background: yellow; display: none;}
+		
+	
+/*-----------------------------------------------------------------------FEATURES-----------------------------------------------------------------*/
+
+.features{ margin: 0 0 82px 0; }
+
+	.features .col{ width: 300px; background:url("images/featured-row-bg.png") no-repeat; position: relative; padding: 21px 0 54px 0; }
+	
+		.features .col h4, .features .col p  { padding: 0 22px; }
+		
+		.features .col h4{ font-size: 18px; margin: 0 0 5px 0;}
+	
+		.features .col a{ position: absolute; top: 140px; }
+		
+		.features .col1, .features .col2{ margin: 0 30px 0 0; }
+		
+		.features .col p{ color: #d1d1d1; }
+	
+/*-----------------------------------------------------------------------QOUTE-----------------------------------------------------------------*/
+
+#quote{ background: url("images/quote-1.png") no-repeat 0 center; width: 910px; padding: 0 0 0 50px; margin: 0 0 48px 0; }
+
+#quote p{ font-size: 30px; background: url("images/quote-1.png") no-repeat right center; width: 800px; letter-spacing: 1px; padding: 0 65px 0 30px; color: #4b4b4b; line-height: 30px; }
+
+.q2{ color: #9ea495; }
+
+
+/*-----------------------------------------------------------------------SERVICES-----------------------------------------------------------------*/
+
+.services{ background: url("images/services-borders.png") no-repeat; width: 960px; padding: 21px 0 55px; margin: 0 0 40px 0; }
+
+	.services h3, .services h2{ font-size: 22px; }
+
+	.services .col{ width: 252px;}
+	
+		.services .col h3{ padding: 45px 0 15px 45px; color: #484848; }
+		
+		.services .col h2	{ margin: 0 0 17px 0;}
+				
+	.services .col1, .services .col2{ margin: 0 37px 0 0; }
+		
+	.services .col1{ padding: 0 0 0 60px; }
+	
+		.services .col1 h3{ background: url("images/icon-1.png") no-repeat 0 35px; }
+		
+		.services .col2 h3{ background: url("images/icon-2.png") no-repeat 0 35px; }
+		
+		.services .col3 h3{ background: url("images/icon-3.png") no-repeat 0 35px; }
+		
+	.services p{ color: #272727; margin: 0 0 13px 0; }
+	
+	.border{ border-bottom: 3px solid #9c9c9c; padding: 0 0 26px 0; }
+	
+	.imgs{ margin: 24px 0 10px; background: url("images/shadow.png") no-repeat 7px bottom; padding: 0 0 6px; }
+	
+		.imgs img{ border: 3px solid #67686b; }
+		
+	.more{ background: url("images/read-more-link-2-bg.png") no-repeat; width: 98px; height: 40px; display: block; padding: 11px 0 0 23px; font-size: 14px; }
+	
+	.more:hover{ background: url("images/read-more-link-2-bg-hover.png") no-repeat; }
+
+
+/*-----------------------------------------------------------------------FOOTER-----------------------------------------------------------------*/
+
+.footer{ position: relative; }
+
+.footer .col1{ width: 300px }
+
+	#gallery{ overflow: hidden; background: url("images/gallery-bg.png") no-repeat; padding: 25px 0 20px 19px;}
+
+		#gallery li{ float: left; overflow: hidden; margin: 0 12px 15px 0; }
+		
+		#gallery li:last-child{ margin-right: 0; }
+		
+		#gallery a{ background: url("images/img-border.png") no-repeat; width: 120px; height: 117px; display:block; padding: 5px 0 0 7px;}
+
+.footer .col2{ width: 653px; overflow: hidden; position: relative; }
+
+.footer .col2 img{ float: left; margin: 0 0 0 22px;}
+
+.form-main{ background: url("images/form-wrapper-bg.png") no-repeat; width: 577px; height: 341px; margin: 0 0 0 75px; padding: 18px 0 0 20px; }
+
+	.footer form{ width: 260px; }
+	
+		.form-main div{ margin: 0 0 7px 0; }
+	
+	label{ display: block; }
+	
+	.footer input[type="text"], textarea{ border: 1px solid #6f6f6f; background: #303030; resize: none;}
+	
+	.footer input[type="text"]{ padding: 2px 0; width: 255px; }
+	
+		.footer input[type="submit"]{ border: none; background: url("images/send-btn.png")no-repeat; right: 0; width: 25px; height: 94px; position: absolute; top: 26px; cursor: pointer; }
+		
+		.footer input[type="submit"]:hover{ background: url("images/send-btn-hover.png")no-repeat; }
+		
+		.message-wrapper{ position: relative; }
+		
+.footer .menu a{ font-size: 18px; margin: 0 19px 0 0; }	
+
+	.about{ width: 230px; position: absolute; top: 26px; right: 0px; margin: 0 30px 0 0; }
+	
+		.about a { display: block; }
+		
+		.about h2{ margin: 0 0 20px 0; }
+		
+		.about img{ padding: 18px 64px 42px 27px; }
+		
+		.copyright{ font-size: 11px; }
+
+	.social-icons{ clear: both; position: absolute; top: 311px; right: 295px; }
+		
+		.social-icons ul{ overflow: hidden; }
+	
+		.social-icons li{ float: left; margin: 0 14px 0 0; }
+
